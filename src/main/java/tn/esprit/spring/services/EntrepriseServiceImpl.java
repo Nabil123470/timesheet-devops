@@ -16,7 +16,7 @@ import tn.esprit.spring.repository.EntrepriseRepository;
 
 @Service
 public class EntrepriseServiceImpl implements IEntrepriseService {
-
+ // test Junit 
 	@Autowired
     EntrepriseRepository entrepriseRepoistory;
 	@Autowired
