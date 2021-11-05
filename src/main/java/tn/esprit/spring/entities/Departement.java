@@ -1,7 +1,6 @@
 package tn.esprit.spring.entities;
 
 import java.io.Serializable;
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,13 +25,13 @@ public class Departement implements Serializable {
 	private String name;
 	
 	//@JsonManagedReference 
-	@JsonIgnore
+	/*@JsonIgnore
 	@ManyToMany
 	private List<Employe> employes;
 	
 	@OneToMany(mappedBy="departement")
 	private List<Mission> missions;
-	
+	*/
 	@ManyToOne
 	private Entreprise entreprise;
 
@@ -59,7 +58,7 @@ public class Departement implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+/*
 	public List<Employe> getEmployes() {
 		return employes;
 	}
@@ -75,7 +74,7 @@ public class Departement implements Serializable {
 	public void setMissions(List<Mission> missions) {
 		this.missions = missions;
 	}
-
+*/
 	public Entreprise getEntreprise() {
 		return entreprise;
 	}

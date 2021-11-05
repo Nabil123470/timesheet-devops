@@ -16,7 +16,7 @@ import tn.esprit.spring.repository.EntrepriseRepository;
 
 @Service
 public class EntrepriseServiceImpl implements IEntrepriseService {
- // test Junit 
+ // test Log4j
 	@Autowired
     EntrepriseRepository entrepriseRepoistory;
 	@Autowired
@@ -131,6 +131,7 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 
 	@Transactional
 	public void deleteDepartementById(int depId) {
+		
 		try{
 			l.info("In Method deleteDepartementById : " );
 

@@ -10,7 +10,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import tn.esprit.spring.controller.ControllerEmployeImpl;
 
 
 public class LoginFilter implements Filter {
@@ -20,7 +19,7 @@ public class LoginFilter implements Filter {
 
 		HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
 		HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
-
+/*
 		ControllerEmployeImpl employeController = 
 				(ControllerEmployeImpl) httpServletRequest.getSession().getAttribute("employeController");
 
@@ -29,6 +28,7 @@ public class LoginFilter implements Filter {
 		
 		else {httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/login.jsf" );}
 	}
-
+*/
+}
 }
 

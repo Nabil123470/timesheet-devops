@@ -19,7 +19,7 @@ public class Entreprise implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 3152690779535828408L;
-
+ 
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -80,6 +80,12 @@ public class Entreprise implements Serializable{
 	public void addDepartement(Departement departement){
 		departement.setEntreprise(this);
 		this.departements.add(departement);
+	}
+
+	public Entreprise(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
 	}
 
 
