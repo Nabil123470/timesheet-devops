@@ -112,7 +112,16 @@
 			<version>1.16.16</version>
 		</dependency>
 		<!-- JSF -->
-
+<distributionManagement>
+<snapshotRepository>
+<id>nexus-snapshots</id>
+<url>http://localhost:8081/repository/maven-snapshots/</url>
+</snapshotRepository>
+<repository>
+<id>nexus-releases</id>
+<url>http://localhost:8081/repository/maven-releases/</url>
+</repository>
+</distributionManagement>
 	</dependencies>
 
 
