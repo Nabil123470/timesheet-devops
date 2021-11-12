@@ -112,6 +112,9 @@
 			<version>1.16.16</version>
 		</dependency>
 		<!-- JSF -->
+
+	</dependencies>
+
 <distributionManagement>
 <snapshotRepository>
 <id>nexus-snapshots</id>
@@ -122,9 +125,6 @@
 <url>http://localhost:8081/repository/maven-releases/</url>
 </repository>
 </distributionManagement>
-	</dependencies>
-
-
 
 	<build>
 		<outputDirectory>src/main/webapp/WEB-INF/classes</outputDirectory>
